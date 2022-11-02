@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../boardgame"
+		}
+	],
+	"extensions": {
+		"recommendations": [
+			"esbenp.prettier-vscode"
+		]
+	}
+}
