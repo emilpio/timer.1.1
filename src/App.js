@@ -9,7 +9,6 @@ const App = () => {
   const [timer, setTimer] = useState(null);
 
   const start = (e) => {
-    e.preventDefault();
     setTimer(
       setInterval(() => {
         setTime((prevValue) => prevValue + 1);
@@ -26,13 +25,13 @@ const App = () => {
     return () => {
       if (timer) clearInterval(timer);
     };
-  }, []);
+  }, [timer]);
 
   return (
     <Container>
       <Timer time={time} />
-      <Button onClick={start}>Start</Button>
-      <Button onClick={stop}>Stop</Button>
+      <Button onClick={start}>Starto</Button>
+      <Button onClick={stop}>Stopo</Button>
       <Button
         onClick={() => {
           setTime(0);
