@@ -12,7 +12,7 @@ const App = () => {
     e.preventDefault();
     setTimer(
       setInterval(() => {
-        setTime((prevValue) => prevValue + 1);
+        setTime((prevValue) => prevValue + 4);
       }, 1)
     );
   };
